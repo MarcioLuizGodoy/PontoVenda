@@ -50,7 +50,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="pass" min="-2" pref="223" max="-2" attributes="0"/>
+                              <Component id="txtPass" min="-2" pref="223" max="-2" attributes="0"/>
                               <Component id="txtCorreo" min="-2" pref="223" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
@@ -78,7 +78,7 @@
                   <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" pref="33" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="pass" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPass" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                   <Component id="btnEntrar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="216" max="32767" attributes="0"/>
@@ -99,6 +99,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCorreo">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCorreoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
@@ -114,12 +117,18 @@
             <Property name="text" type="java.lang.String" value="Password"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JPasswordField" name="pass">
+        <Component class="javax.swing.JPasswordField" name="txtPass">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPassActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnEntrar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Entrar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEntrarActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
